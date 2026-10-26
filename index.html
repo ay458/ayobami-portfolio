@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to my personal portfolio. Explore my skills, projects, and web development journey.">
+    <meta name="author" content="Your Name">
+    <title>My Portfolio | Web Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar container"
+            <a href="#home" class="logo">
+                My Portfolio
+            </a>
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+                aria-controls="nav-links"
+            >
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button
+                class="theme-toggle"
+                id="theme-toggle"
+                type="button"
+                aria-label="Switch to dark mode"
+            >
+                🌙
+            </button>
+
+        </nav>
+    </header>
+<main>
+
+<!-- ================= HOME / HERO SECTION ================= -->
+<section class="hero" id="home">
+    <div class="container hero-container">
+        <div class="hero-content">
+            <p class="hero-greeting">WELCOME TO MY PORTFOLIO</p>
+                <h1>
+                    Hello, I'm <span class="highlight">Ayobami</span>
+                </h1>
+                <h2>Aspiring Web Developer</h2>
+             <p class="hero-description">
+                I am passionate about technology and building
+                beautiful, responsive, and user-friendly websites.
+                I enjoy turning ideas into digital experiences.
+            </p>
+            <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            View My Projects
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline">
+                            Contact Me
+                        </a>
+                    </div>
+
+                    <button
+                        type="button"
+                        class="hello-button"
+                        id="welcome-btn"
+                    >
+                        Say Hello 👋
+                    </button>
+
+                    <p
+                        id="welcome-message"
+                        class="welcome-message"
+                        aria-live="polite"
+                    ></p>
+
+                    <div class="social-links">
+                        <a
+                            href="https://github.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="GitHub profile"
+                        >
+                            GitHub
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label="LinkedIn profile"
+                        >
+                            LinkedIn
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="hero-image">
+                    <!-- Replace images/profile.jpg with your own photo -->
+                    <img
+                        src="images/Professional Avatar.jpg"
+                        alt="Kadiri Ayobami Oluwadurotimi"
+                        class="profile-image"
+                    >
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ================= ABOUT SECTION ================= -->
+        <section class="section about-section" id="about">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="section-subtitle">GET TO KNOW ME</p>
+                    <h2>About <span class="highlight">Me</span></h2>
+                </div>
+
+                <div class="about-content">
+
+                    <div class="about-text">
+                        <h3>My Journey in Web Development</h3>
+
+                        <p>
+                            Hello! I am an aspiring web developer who enjoys
+                            learning how websites work and how technology
+                            can solve everyday problems.
+                        </p>
+
+                        <p>
+                            I am building my skills in HTML, CSS, JavaScript,
+                            Python, and other web technologies. My goal is
+                            to create useful digital products and continue
+                            improving through practical projects.
+                        </p>
+
+                        <p>
+                            When I am not coding, I enjoy learning new things,
+                            exploring technology, and working on creative ideas.
+                        </p>
+
+                        <!-- Add your CV file to the project folder -->
+                        <a
+                            href="cv.pdf"
+                            class="btn btn-primary"
+                            download
+                        >
+                            Download My CV
+                        </a>
+                    </div>
+
+                    <div class="about-details">
+                        <div class="detail-card">
+                            <h4>Education</h4>
+                            <p>Add your school or qualification here.</p>
+                        </div>
+
+                        <div class="detail-card">
+                            <h4>Career Goal</h4>
+                            <p>Become a skilled web developer.</p>
+                        </div>
+
+                        <div class="detail-card">
+                            <h4>Current Focus</h4>
+                            <p>Building projects and improving my coding skills.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= SKILLS SECTION ================= -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="section-subtitle">WHAT I AM LEARNING</p>
+                    <h2>My <span class="highlight">Skills</span></h2>
+                    <p>
+                        Technologies I use or am currently learning
+                        to build websites and applications.
+                    </p>
+                </div>
+
+                <div class="skills-grid">
+
+                    <article class="skill-card">
+                        <div class="skill-icon">🌐</div>
+                        <h3>HTML5</h3>
+                        <p>Creating the structure of web pages.</p>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">🎨</div>
+                        <h3>CSS3</h3>
+                        <p>Styling websites and creating responsive layouts.</p>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">⚡</div>
+                        <h3>JavaScript</h3>
+                        <p>Adding interactive features to websites.</p>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">🐍</div>
+                        <h3>Python</h3>
+                        <p>Learning programming and application logic.</p>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">🔧</div>
+                        <h3>Flask</h3>
+                        <p>Learning to build web backends with Python.</p>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">⚛️</div>
+                        <h3>React</h3>
+                        <p>Learning to build component-based user interfaces.</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= PROJECTS SECTION ================= -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="section-subtitle">MY RECENT WORK</p>
+                    <h2>My <span class="highlight">Projects</span></h2>
+                    <p>
+                        A selection of projects I have built or am developing.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+
+                    <!-- Project 1 -->
+                    <article class="project-card">
+
+                        <img
+                            src="images/Portfolio.jpg"
+                            alt="Preview of personal portfolio website"
+                            class="project-image"
+                            loading="lazy"
+                        >
+
+                        <div class="project-info">
+                            <p class="project-category">Web Development</p>
+
+                            <h3>Personal Portfolio</h3>
+
+                            <p>
+                                A personal website designed to showcase my
+                                background, skills, projects, and contact details.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="#contact">Project Details</a>
+                                <a
+                                    href="https://github.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+
+                    </article>
+
+
+                    <!-- Project 2 -->
+                    <article class="project-card">
+
+                        <img
+                            src="images/project2.jpg"
+                            alt="Preview of a complaint management application"
+                            class="project-image"
+                            loading="lazy"
+                        >
+
+                        <div class="project-info">
+                            <p class="project-category">Web Application</p>
+
+                            <h3>Major Nasty Drip</h3>
+
+                            <p>
+                                A project for fashionistas,we sell comfortable
+                                street wears.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>Html</span>
+                                <span>Css</span>
+                                <span>Javascripts</span>
+                                <span>Python</span>
+                                <span>Flask</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="#contact">Project Details</a>
+                                <a
+                                    href="https://github.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+
+                    </article>
+
+
+                    <!-- Project 3 -->
+                    <article class="project-card">
+
+                        <img
+                            src="images/TaskEarnpicx.jpg"
+                            alt="Preview of the TaskEarn website concept"
+                            class="project-image"
+                            loading="lazy"
+                        >
+
+                        <div class="project-info">
+                            <p class="project-category">Website Concept</p>
+
+                            <h3>TaskEarn Website</h3>
+
+                            <p>
+                                A platform concept where users can discover
+                                assigned tasks and track their progress.
+                            </p>
+
+                            <div class="project-tags">
+                                <span>React</span>
+                                <span>JavaScript</span>
+                                <span>Flask</span>
+                                <span>Python</span>
+                            </div>
+
+                            <div class="project-links">
+                                <a href="#contact">Project Details</a>
+                                <a
+                                    href="https://github.com/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= CONTACT SECTION ================= -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="section-subtitle">LET'S CONNECT</p>
+                    <h2>Contact <span class="highlight">Me</span></h2>
+                    <p>
+                        Have a question, project idea, or opportunity?
+                        Feel free to get in touch.
+                    </p>
+                </div>
+
+                <div class="contact-content">
+
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+
+                        <p>
+                            I am interested in learning, collaborating,
+                            and working on creative web development projects.
+                        </p>
+
+                        <div class="contact-item">
+                            <strong>Email</strong>
+                            <a href="mailto:your-email@example.com">
+                                your-email@example.com
+                            </a>
+                        </div>
+
+                        <div class="contact-item">
+                            <strong>GitHub</strong>
+                            <a
+                                href="https://github.com/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Visit my GitHub
+                            </a>
+                        </div>
+
+                        <div class="contact-item">
+                            <strong>Location</strong>
+                            <p>Add your preferred location here.</p>
+                        </div>
+                    </div>
+
+
+                    <!-- Frontend contact form -->
+                    <form class="contact-form" id="contact-form">
+
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                placeholder="Enter your name"
+                                autocomplete="name"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email"
+                                autocomplete="email"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input
+                                type="text"
+                                id="subject"
+                                name="subject"
+                                placeholder="Enter the subject"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                placeholder="Write your message here"
+                                required
+                            ></textarea>
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary submit-btn"
+                        >
+                            Send Message
+                        </button>
+
+                        <p
+                            id="form-status"
+                            class="form-status"
+                            aria-live="polite"
+                        ></p>
+
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ================= SCROLL TO TOP BUTTON ================= -->
+    <button
+        type="button"
+        id="scroll-top"
+        class="scroll-top"
+        aria-label="Scroll to top"
+        title="Back to top"
+    >
+        ↑
+    </button>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        <div class="container footer-content">
+
+            <p>
+                &copy; <span id="year"></span> Your Name.
+                All rights reserved.
+            </p>
+
+            <a href="#home">Back to Home ↑</a>
+
+        </div>
+    </footer>
+
+</body>
+</html>
